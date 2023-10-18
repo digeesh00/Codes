@@ -1,0 +1,18 @@
+bdate=int(input("Enter birth date :"))
+bmonth=int(input("Enter birth month :"))
+byear=int(input("Enter birth year :"))
+cdate=int(input("Enter current date :"))
+cmonth=int(input("Enter current month :"))
+cyear=int(input("Enter current year :"))
+caldate=cdate-bdate
+calmonth=cmonth-bmonth
+calyear=cyear-byear
+if caldate<0:
+  caldate=caldate+30
+else:
+  caldate=caldate
+if calmonth<0:
+  calmonth=calmonth+12
+else:
+  calmonth=calmonth
+print(caldate,"days",calmonth,"months",calyear,"years old")
